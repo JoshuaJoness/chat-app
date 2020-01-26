@@ -18,7 +18,7 @@ const Chat = ({ location }) => {
 	const [users, setUsers] = useState('');
 	const [message, setMessage] = useState('')
 	const [messages, setMessages] = useState([])
-	const ENDPOINT = 'localhost:4000'
+	const ENDPOINT = 'https://joshua-chat-app-server.herokuapp.com/'
 
 	useEffect(() => {
 		const { name, room } = queryString.parse(location.search)
